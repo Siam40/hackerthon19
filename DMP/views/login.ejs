@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container col-md-6">
+		<div class="form-control">
+			<!-- Default form login -->
+			<form class="text-center border border-light p-5" action="/users/login" method="post">
+			    <p class="h4 mb-4">Sign in</p>
+			    <!-- Email -->
+			    <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="UserName" name="username">
+
+			    <!-- Password -->
+			    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" name="password">
+
+			    <div class="d-flex justify-content-around">
+			        <div>
+			            <!-- Remember me -->
+			            <div class="custom-control custom-checkbox">
+			                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+			                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+			            </div>
+			        </div>
+			        <div>
+			            <!-- Forgot password -->
+			            <a href="">Forgot password?</a>
+			        </div>
+			    </div>
+
+			    <!-- Sign in button -->
+			    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+			    <!-- Register -->
+			    <p>Not a member?
+			        <a href="/users/signup">Register</a>
+			    </p>
+
+			</form>
+			<!-- Default form login -->
+		</div>
+		
+	</div>
+</body>
+</html>

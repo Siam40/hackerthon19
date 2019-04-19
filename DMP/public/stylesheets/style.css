@@ -1,8 +1,269 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body{
+    background-color: #F1F1F1;
+    font-family:'Roboto', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#heading{
+    background-color: #47484B;
+    color: #fff;
+}
+
+#logo{
+    padding: 5px;
+    padding-left: 54px;
+    padding-top: 20px;
+    color: aqua;
+    font-family: 'Mina', sans-serif;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    padding-left: 40px;
+
+}
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color:aqua;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    color: #F8CD47;
+}
+
+#main-content{
+    width: 950px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+#main-content:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 300ms ease-out;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: aqua;
+}
+
+*{
+    box-sizing: border-box;
+}
+.nav{
+    width: 90%;
+    margin: auto;
+    border-bottom: 1.5px solid #000;
+}
+#main{
+    float: left;
+    overflow: hidden;
+}
+#sidebar{
+    float: right;
+}
+
+.head{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.nav::after{
+    content:  "";
+    clear: both;
+    display: table;
+}
+.box{
+    padding-top: 20px;
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn a{
+    color: #fff;
+}
+.btn2{
+    background-color: #ff9933;
+}
+.btn3{
+    background-color: #7373ab;
+}
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.nav ul li{
+    float: right;
+    margin: 10px;
+}
+.nav li a{
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+#content{
+    width: 90%;
+    margin: auto;
+}
+#content #main{
+    width: 75%;
+}
+.dot{
+    width: 100%;
+}
+.login{
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #7373ab;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dise a{
+    text-decoration: none;
+}
+.pad{
+    padding-top: 30px;
+}
+.blogin{
+ width: 60%;
+    margin: auto;
+    padding-top: 20px;
 }

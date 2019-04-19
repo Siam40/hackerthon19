@@ -1,11 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1></h1>
-    <p>Welcome to homepage</p>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>home</title>
+        <link href="stylesheets/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mina:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    </head>
+    
+    <body>
+        
+        <!-- heder -->
+        
+        <div id="heading">
+            <div id="logo">
+                <a href="#"><h1>MarketPlace</h1></a>
+            </div>
+            
+            <div id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/allads">All Ads</a></li>
+                    <li><a href="/users/login">Login</a></li>
+                    <li><a href="/users/signup">SignUp</a></li>
+                    <li><a href="/sellProduct">Sell Your Product</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <!-- main content -->
+        
+        <div id="main-content">
+            <div class="w3-content w3-section" style="max-width:100%">
+              <img class="mySlides" src="/images/blue.jpg" style="width:100%">
+              <img class="mySlides" src="/images/blue1.jpg" style="width:100%">
+              <img class="mySlides" src="/images/blue2.jpg" style="width:100%">
+              <img class="mySlides" src="/images/blue3.jpg" style="width:100%">
+            </div>
+            
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+        <!--Galary -->
+        
+        
+         <!--
+        <div id="footer">
+           
+            <div id="media">
+                <ul>
+                    <li><a><img src="/images/facebook.PNG" alt="facebook"></a></li>
+                    <li><a><img src="/images/insta.PNG" alt="instagram"></a></li>
+                    <li><a><img src="/images/linkdin.PNG" alt="linkedin"></a></li>
+                </ul>
+            </div>
+            
+            <div id="foot">
+                <p>All rights reserved to K. B. Nicksun</p>
+            </div>
+           
+        </div>
+ -->
+        
+    </body>
 </html>
